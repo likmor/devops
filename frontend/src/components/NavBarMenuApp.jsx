@@ -17,21 +17,6 @@ function NavBarMenuApp() {
             <Nav.Link as={NavLink} to="/home">
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/lab01">
-              Lab01
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/lab02">
-              Lab02
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/lab03">
-              Lab03
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/lab04/Add">
-              Lab04
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/lab05">
-              Lab05
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

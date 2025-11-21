@@ -4,7 +4,7 @@ function Home() {
   const [data, setData] = useState(null);
   useEffect(() => {
     async function getData() {
-      const url = "http://localhost:5000/";
+      const url = "/api/";
       try {
         const response = await fetch(url);
         const text = await response.text();

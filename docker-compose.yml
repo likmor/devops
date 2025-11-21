@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 
 services:
   backend:
@@ -6,11 +6,12 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: backend
-    ports:
-      - "5000:5000"
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
       ASPNETCORE_HTTP_PORTS: "5000"
+    networks:
+      - my-network
+
 
   frontend:
     build:
@@ -21,3 +22,8 @@ services:
       - "80:80"
     depends_on:
       - backend
+    networks:
+      - my-network
+
+networks:
+  my-network:
